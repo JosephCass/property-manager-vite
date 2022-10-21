@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+header {
+  background-color: rgb(46, 46, 46);
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 0.5rem;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  color: white;
+  width: auto;
+}
+
+.navbar {
+  width: auto;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.nav-btn {
+  font-size: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  border-radius: 1rem;
+  border: 0.125rem solid white;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+.nav-btn:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+.signup-btn {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.login-btn {
+  padding: 0.5rem 1rem;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(210, 210, 210);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.site-description {
+  padding: 3rem;
+  max-width: 900px;
+}
+
+.site-description-header {
+  font-family: "Montserrat";
+  margin-bottom: 1rem;
+}
+
+.site-description-text {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8rem;
+}
+
+.input-error {
+  /* border: 1px solid red; */
+}
+
+.input:invalid {
+}
+
+.main-below-img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.signup-form {
+  border: 1px solid blue;
+  border-radius: 1rem;
+  background-color: rgb(210, 210, 210);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+.signup-form-title {
+  font-family: "Montserrat";
+  padding: 1rem;
+}
+
+.login-form {
+  border: 1px solid blue;
+  border-radius: 1rem;
+  background-color: rgb(210, 210, 210);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+.login-form-title {
+  font-family: "Montserrat";
+  padding: 1rem;
+}
+
+.login-email-container {
+  padding: 1rem;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 0.2rem;
+  padding-right: 0;
+}
+
+.login-email-icon {
+  margin-right: 0.5rem;
+}
+
+.input-container {
+  margin-bottom: 2rem;
+}
+
+.create-account-btn-container {
+  margin-bottom: 1rem;
+}
+
+.create-account-btn {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  font-family: "Roboto";
+  padding: 0.5rem;
+}
+
+.create-account-btn:hover {
+  cursor: pointer;
+}
+
+.already-account-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.already-account-text {
+  font-family: "Poppins";
+}
+
+.already-account-link {
+}
+
+.already-account-link:visited {
+  color: blue;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.input {
+  width: 90%;
+  border: none;
+  background-color: rgb(210, 210, 210);
+  outline: none;
+  border-bottom: 1px solid gray;
+  padding: 0.25rem;
+  padding-right: 0;
+}
+
+.input-container:focus-within .icon {
+  filter: invert(8%) sepia(99%) saturate(7049%) hue-rotate(248deg)
+    brightness(102%) contrast(144%);
+}
+
+.input:focus {
+  border-bottom: 1px solid #0000ff;
+}
+
+.login-email-input {
+  width: 90%;
+  border: none;
+  background-color: rgb(210, 210, 210);
+  outline: none;
+  border-bottom: 1px solid gray;
+  padding: 0.25rem;
+}
+
+.login-email-container:focus-within .login-email-icon {
+  filter: invert(8%) sepia(99%) saturate(7049%) hue-rotate(248deg)
+    brightness(102%) contrast(144%);
+}
+
+.login-email-input:focus {
+  border-bottom: 1px solid #0000ff;
+}
+
+.login-password-container {
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 0rem;
+  padding-right: 0;
+}
+
+.login-password-icon {
+  margin-right: 0.5rem;
+}
+
+.login-password-input {
+  width: 90%;
+  border: none;
+  background-color: rgb(210, 210, 210);
+  outline: none;
+  border-bottom: 1px solid gray;
+  padding: 0.25rem;
+  padding-right: 0;
+}
+
+.login-password-container:focus-within .login-password-icon {
+  filter: invert(8%) sepia(99%) saturate(7049%) hue-rotate(248deg)
+    brightness(102%) contrast(144%);
+}
+
+.login-password-input:focus {
+  border-bottom: 1px solid #0000ff;
+}
+
+.login-password-reveal {
+}
+
+.login-password-reveal:hover {
+  cursor: pointer;
+}
+
+.login-extra-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+  padding-bottom: 1rem;
+}
+
+.rememberme-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rememberme-label {
+  font-size: 0.7rem;
+}
+
+.forgot-password-btn {
+  font-size: 0.7rem;
+  color: blue;
+}
+
+.forgot-password-link:visited {
+  color: blue;
+}
+
+.login-btn-container {
+  padding-bottom: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-family: "Roboto";
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}
+
+.login-signup-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-signup-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.login-signup-link:visited {
+  color: blue;
+}
+
+/* form validation */
+.input-error:focus-within .icon {
+  filter: invert(16%) sepia(89%) saturate(7494%) hue-rotate(3deg)
+    brightness(98%) contrast(117%);
+}
+
+.input-error:focus-within .input {
+  border-bottom: 1px solid red;
+}
+
+.form-error {
+  font-family: "Ubuntu";
+  color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+Firefox input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.nav-account-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-account-display:hover {
+  cursor: pointer;
+}
+
+.nav-account-default-display {
+  display: flex;
+  gap: 1rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.nav-account-name {
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-account-logo {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(227deg)
+    brightness(103%) contrast(102%);
+}
+
+.nav-account-logo:hover {
+  cursor: pointer;
+}
+
+.nav-account-dropdown {
+  background-color: black;
+  position: absolute;
+  top: 6.5rem;
+}
+
+.dropdown-item {
+  padding: 1rem;
+  border: 1px solid blue;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-account-logo:hover + .nav-account-dropdown {
+  display: block;
+}
+
+@media all and (min-width: 700px) {
+  :root {
+    font-size: 18px;
+  }
+
+  .logo {
+    padding-left: 1rem;
+  }
+
+  .login-form {
+    width: 70%;
+  }
+
+  .login-email-input {
+    width: 80%;
+  }
+
+  .login-password-input {
+    width: 80%;
+  }
+}

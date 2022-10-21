@@ -1,0 +1,5 @@
+class AccountManager {
+  let;
+
+  constructor() {}
+}
